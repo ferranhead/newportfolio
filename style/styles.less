@@ -75,7 +75,7 @@ a {
 	height: 100%;
 	display: table-cell;
 	background-image: url(../img/ferranheadHome-2.jpg);   
-	background-position: center center;
+	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
 	right: 0;
@@ -86,6 +86,10 @@ a {
 
 	opacity: .2;
 }
+
+// @media (max-width:400px) {
+// 	background-position: right;
+// }
 
 /*PROJECTS*/
 
@@ -142,10 +146,10 @@ a {
 }
 
 @media (min-width:750px) and (max-width: 1025px) {
-	.thumb {.col-2( ~"calc(50% - 20px)", left); margin: 0 0 20px 20px; height: 18rem;}
+	.thumb {.col-2( ~"calc(50% - 20px)", left); margin: 0 0 20px 20px; height: 16rem;}
 }
 @media (max-width: 749px) {
-	.thumb {width: ~"calc(100% - 20px)"; margin: 0 0 20px 20px; height: 18rem;}
+	.thumb {width: ~"calc(100% - 20px)"; margin: 0 0 20px 20px; height: 14rem;}
 }
 
 // .thumb:hover {
@@ -196,7 +200,7 @@ a {
 	}
 }
 
-//Copy the hover state to be present in tablets and mob
+//Copy the hover state to be present in tablets and mob 	 
 @media (max-width: 1024px) {
 	.project-title-thumb {
 	-ms-transform: translateY(40%); /* IE 9 */
@@ -424,30 +428,6 @@ a {
 
 /*SOCIAL NETWORK*/
 
-// .sn-wrapper {
-// 	display: table;
-// 	width: 100%;
-// 	padding: 50px 30px;
-// 	margin: 0 auto;
-// 	background-color: green;
-// }
-
-// .sn-block-wrapper {
-// 	width: 100%;
-// 	display: block;
-// 	margin: 0px 200px;
-// }
-
-// .sn-block {
-// 	display: inline-block;
-// 	width: ~"calc(33.33% - 103px)";
-// 	background-color: red;
-// 	margin: 0 auto;
-// 	margin-top: 30px;
-// 	padding: 40px;
-// 	text-align: center;
-// }
-
 .social-section {
 	background-color: @dark-grey;
 	position: relative;
@@ -458,6 +438,7 @@ a {
 
 .social-wrapper {
 	display: flex;
+	// display: inline-block;
     width: 75%;
     margin: 0 auto;
     padding: 30px;
@@ -500,19 +481,20 @@ a {
 /*CONTACT*/
 
 .contact-section{
-	background-color: @mainColour;
+	background-color: @secondaryColour;
 	display: inline-block;
 	padding: 100px 0;
 }
 .mail-contact {
 	padding: 20px;
-	background-color: @white-transparent;
+	background-color: @gold;
 	margin: 15px auto;
-	max-width: 380px;
+	max-width: 355px;
 	text-align: center;
 }
 @media (max-width: 400px) {
-	.mail-contact { max-width: 240px; font-size: 28px;}
+	.mail-contact { max-width: 240px; font-size: 21px;}
+	.contact-section { padding: 0 0 40px;}
 }
 
 /*FOOTER*/

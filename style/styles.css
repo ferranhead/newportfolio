@@ -31,6 +31,7 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.35em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -42,6 +43,7 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.35em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -151,7 +153,7 @@ a {
   height: 100%;
   display: table-cell;
   background-image: url(../img/ferranheadHome-2.jpg);
-  background-position: center center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
@@ -213,14 +215,14 @@ a {
     width: calc(50% - 20px);
     float: left;
     margin: 0 0 20px 20px;
-    height: 18rem;
+    height: 16rem;
   }
 }
 @media (max-width: 749px) {
   .thumb {
     width: calc(100% - 20px);
     margin: 0 0 20px 20px;
-    height: 18rem;
+    height: 14rem;
   }
 }
 .thumb:hover .project-title-thumb {
@@ -440,21 +442,24 @@ a {
 }
 /*CONTACT*/
 .contact-section {
-  background-color: #1f2021;
+  background-color: #060607;
   display: inline-block;
   padding: 100px 0;
 }
 .mail-contact {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #c3a21d;
   margin: 15px auto;
-  max-width: 380px;
+  max-width: 355px;
   text-align: center;
 }
 @media (max-width: 400px) {
   .mail-contact {
     max-width: 240px;
-    font-size: 28px;
+    font-size: 21px;
+  }
+  .contact-section {
+    padding: 0 0 40px;
   }
 }
 /*FOOTER*/

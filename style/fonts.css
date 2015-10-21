@@ -29,6 +29,7 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.35em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -40,6 +41,7 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.35em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
