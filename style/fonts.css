@@ -1,0 +1,96 @@
+/*Main Font styles*/
+/*Main general colour styles*/
+/*Dark grey background*/
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 45px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #b3b9bf;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 399px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #ffffff;
+}
+@media (max-width: 400px) {
+  .h2 {
+    font-size: 26px;
+  }
+}
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #ffffff;
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
+}
+.p-big {
+  font-style: italic;
+  font-size: 35px;
+  line-height: 1.05em;
+  color: #c3a21d;
+}
+@media (max-width: 400px) {
+  .p-big {
+    font-size: 26px;
+  }
+}
+.title-span {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.p-small {
+  font-size: 13px;
+}
