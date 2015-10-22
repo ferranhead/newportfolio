@@ -80,8 +80,9 @@ p {
   margin: 0 auto;
 }
 .p-big {
+  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
-  font-size: 35px;
+  font-size: 28px;
   line-height: 1.05em;
   color: #c3a21d;
 }
@@ -179,8 +180,7 @@ a {
 .section-title {
   text-align: center;
   vertical-align: middle;
-  font-family: serif;
-  padding: 0 20px;
+  padding: 0 20px 30px;
 }
 .thumb-wrapper {
   margin: 0 auto;
@@ -406,15 +406,17 @@ a {
   position: relative;
   padding: 60px 0;
   margin: 0 auto;
+  width: 100%;
 }
 .social-wrapper {
   display: flex;
   width: 75%;
   margin: 0 auto;
   padding: 30px;
+  content: center;
 }
 .social-link-home {
-  width: 25%;
+  width: 9%;
   display: inline-block;
   padding: 40px 60px;
   text-align: center;
@@ -459,7 +461,7 @@ a {
     font-size: 21px;
   }
   .contact-section {
-    padding: 0 0 40px;
+    padding: 40 0 40px;
   }
 }
 /*FOOTER*/
