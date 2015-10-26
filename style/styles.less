@@ -94,6 +94,7 @@ a {
 /*PROJECTS*/
 
 .section {
+	position: relative;
 	width: 100%;
 	/*height: 100%;*/   
 	height: auto;
@@ -118,7 +119,12 @@ a {
 .thumb-wrapper {
 	margin: 0 auto;
 	background-color: @secondaryColour;
-	height: 100%
+	height: 100%;
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 @media (max-width: 1025px) {
 	.thumb-wrapper {padding: 0px 20px 0 0; }
@@ -137,12 +143,12 @@ a {
 	width: 50%;
 	float: left; 
 	position: relative;
-	height: 32rem;
+	height: 28rem;
 	overflow: hidden;
 
 }
 @media (min-width:1450px){
-	.thumb {.col-3( 33.33%, left); height: 18rem;}
+	.thumb {.col-3( 33.33%, left); height: 28rem;}
 }
 
 @media (min-width:750px) and (max-width: 1025px) {
@@ -172,11 +178,11 @@ a {
 // 	}
 // }
 
-.thumb:hover {
+.thumb:hover, .touch .thumb {
 	.project-title-thumb {
-	-ms-transform: translateY(40%); /* IE 9 */
-   	-webkit-transform: translateY(40%); /* Safari */
-   	-moz-transform: translateY(40%); /* Mozilla */
+		-ms-transform: translateY(40%); /* IE 9 */
+	   	-webkit-transform: translateY(40%); /* Safari */
+	   	-moz-transform: translateY(40%); /* Mozilla */
     	transform: translateY(40%);
 
     	opacity: 1;
@@ -185,18 +191,22 @@ a {
 	.project-type-thumb {
 
 		-ms-transform: translateY(40%); /* IE 9 */
-   	-webkit-transform: translateY(40%); /* Safari */
-   	-moz-transform: translateY(40%); /* Mozilla */
-    	transform: translateY(40%);
+		-webkit-transform: translateY(40%); /* Safari */
+		-moz-transform: translateY(40%); /* Mozilla */
+		transform: translateY(40%);
 
-    	opacity: 1;
+		opacity: 1;
 
 		-webkit-transition-delay: .4s; /* Safari */
-    	transition-delay: .4s;
+		transition-delay: .4s;
 	}
 
 	.thumb-image {
 		transform: scale(1.1);
+	}
+
+	&:after {
+	  opacity: 1;
 	}
 }
 
@@ -246,10 +256,6 @@ a {
   -o-transition: opacity .4s ease-in;
   transition: opacity .4s ease-in;
   
-}
-
-.thumb:hover:after {
-  opacity: 1;
 }
 
 // .thumb-image {
@@ -431,23 +437,25 @@ a {
 .social-section {
 	background-color: @dark-grey;
 	position: relative;
-	// display: inline-block;
+	display: inline-block;
 	padding: 60px 0;
 	margin: 0 auto;
 	width: 100%;
+	
 }
 
 .social-wrapper {
-	display: flex;
-	// display: inline-block;
-    width: 72%;
+	/*display: flex;*/
+	display: inline-block;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0  10px;
-    content: center; 
+    content: center;
+    text-align: center; 
 }
 
 .social-link-home {
-	width: 9%;
+	width: 25%;
 	display: inline-block;
 	padding: 40px 60px; 
 	text-align: center;
