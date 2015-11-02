@@ -127,7 +127,8 @@ a {
 	}
 }
 @media (max-width: 1025px) {
-	.thumb-wrapper {padding: 0px 20px 0 0; }
+	.thumb-wrapper {padding: 0px 20px 60px 0; }
+	.section-title {padding: 0 20px 0px; }
 }
 
 .highlight {
@@ -155,7 +156,7 @@ a {
 	.thumb {.col-2( ~"calc(50% - 20px)", left); margin: 0 0 20px 20px; height: 16rem;}
 }
 @media (max-width: 749px) {
-	.thumb {width: ~"calc(100% - 20px)"; margin: 0 0 20px 20px; height: 14rem;}
+	.thumb {width: ~"calc(100% - 20px)"; margin: 0 0 20px 20px; height: 12rem;}
 }
 
 // .thumb:hover {
@@ -454,12 +455,16 @@ a {
     text-align: center; 
 }
 
+@media (max-width: 400px){
+	.social-wrapper {padding: 30px 0 0px;}
+}
+
 .social-link-home {
 	width: 25%;
 	display: inline-block;
 	padding: 40px 60px; 
 	text-align: center;
-	color: @font-grey !important;
+	color: @white;
 	background-color: @secondaryColour;  
 
 	-webkit-transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
@@ -468,43 +473,96 @@ a {
 	transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 }
 
-.social-link-home:hover {
-	color: #fff !important; 
+@media (max-width: 400px) {
+	.social-link-home { width: 44%; margin: 0 5px 10px; padding: 15px 0px;}
+}
+@media (min-width: 401px) and (max-width: 1024px) {
+	.social-link-home { width: 44%; margin: 0 10px 20px; padding: 30px 0px;}
 }
 
-.link-behance:hover {
+
+
+.link-behance:hover  {
 	background-color: @behance-color;
 } 
 
-.link-dribbble:hover {
+.link-dribbble:hover  {
 	background-color: @dribbble-color; 
  }
 
-.link-linkedin:hover {
+.link-linkedin:hover  {
 	background-color: @linkedin-color;
 }
 
-.link-pinterest:hover {
+.link-pinterest:hover  {
 	background-color: @pinterest-color;
 }
+
+/*.touch {
+	.link-behance  {
+		background-color: @behance-color;
+} 
+
+	.link-dribbble  {
+		background-color: @dribbble-color; 
+ }
+
+	.link-linkedin  {
+		background-color: @linkedin-color;
+}
+
+	.link-pinterest  {
+		background-color: @pinterest-color;
+}
+}*/
+.touch { 
+	.link-behance  {
+		/*color: @behance-color !important;*/
+		border-bottom: 3px solid @behance-color;
+} 
+ 
+	.link-dribbble  {
+		/*color: @dribbble-color !important;*/ 
+		border-bottom: 3px solid @dribbble-color;
+ }
+ 
+	.link-linkedin  {
+		/*color: @linkedin-color !important; */
+		border-bottom: 3px solid @linkedin-color;
+}
+ 
+	.link-pinterest  {
+		/*color: @pinterest-color !important; */
+		border-bottom: 3px solid @pinterest-color;
+}
+}
+
 
 /*CONTACT*/
 
 .contact-section{
 	background-color: @secondaryColour;
 	display: inline-block;
-	padding: 100px 0;
+	padding: 60px 0 100px;
 }
 .mail-contact {
-	padding: 20px;
-	background-color: @gold;
-	margin: 15px auto;
-	max-width: 355px;
+	padding: 10px 0 ; 
+	color: @white;
+	/*background-color: @gold;*/
+	margin: -25px auto;
+	max-width: 180px;
 	text-align: center;
+	border-bottom: solid @gold 2px;
 }
 @media (max-width: 400px) {
-	.mail-contact { max-width: 240px; font-size: 21px;}
-	.contact-section { padding: 40 0 40px;}
+	.mail-contact { max-width: 195px; font-size: 21px; margin: 0 auto;}
+	.contact-section { padding: 50px 0 60px;}
+}
+
+@media (min-width: 401px) and (max-width: 1024px){
+	.mail-contact {margin: 0 auto; padding: 10px 0px;}
+	/*.contact-section {padding: 50px 80px;}*/
+	.contact-section {padding: 60px 0 70px;}
 }
 
 /*FOOTER*/

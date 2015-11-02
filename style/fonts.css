@@ -20,7 +20,7 @@ h1 {
 }
 @media (max-width: 399px) {
   h1 {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 }
@@ -48,11 +48,9 @@ h2 {
   margin: 0 auto;
   color: #ffffff;
 }
-@media (max-width: 400px) {
-  .h2 {
-    font-size: 26px;
-  }
-}
+/*@media (max-width: 400px) {
+    	.h2 { font-size: 26px;}
+    }*/
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
@@ -62,7 +60,7 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0 auto;
-  color: #ffffff;
+  /*color: @white;*/
 }
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -86,7 +84,7 @@ p {
 }
 @media (max-width: 400px) {
   .p-big {
-    font-size: 26px;
+    font-size: 32px;
   }
 }
 .title-span {
