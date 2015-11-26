@@ -80,7 +80,8 @@ p {
   font-style: italic;
   font-size: 28px;
   line-height: 1.05em;
-  color: #c3a21d;
+  /*color: @gold;*/
+  color: #2780da;
 }
 @media (max-width: 400px) {
   .p-big {
