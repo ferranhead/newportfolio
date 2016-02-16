@@ -27,6 +27,10 @@ h1 {
 		h1 { font-size: 32px; margin-bottom: 20px;}
 }
 
+@media (min-width:300px) and (max-width: 350px){
+		h1 { font-size: 29px; margin-bottom: 20px;}
+}
+
 h2 {
 	.h2
 }
@@ -43,6 +47,10 @@ h2 {
     text-rendering: optimizeLegibility;
     margin: 0 auto;
     color: @white;
+}
+
+@media (min-width:300px) and (max-width: 350px){
+		.h2 { font-size: 29px; margin-bottom: 20px;}
 }
 
 /*@media (max-width: 400px) {
@@ -77,6 +85,18 @@ p {
 	margin: 0 auto;
 }
 
+/*p ~ p {
+	margin-bottom: 40px; 
+}
+
+p + img {
+	margin-bottom: 60px; 	
+}*/
+
+/*div ~ p {
+	margin-bottom: 60px;
+}*/
+
 .p-big {
 	font-family: @Playfair;
 	font-style: italic;
@@ -91,6 +111,10 @@ p {
 		.p-big { font-size: 32px;}
 	}
 
+@media (min-width:300px) and (max-width: 350px){
+	.p-big { font-size: 29px; margin-bottom: 20px;}
+}
+
 .title-span {
 	font-family: @Playfair;
 	font-style: normal;
@@ -100,4 +124,12 @@ p {
 .p-small {
 	font-size: 13px;
 }
+
+.p2 {
+	font-size: 21px;
+	line-height: 1.5em;
+	max-width: 650px;
+}
+
+
 
