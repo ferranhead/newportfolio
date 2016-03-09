@@ -470,6 +470,7 @@ a {
 
 @media (max-width: 400px){
 	.social-wrapper {padding: 30px 0 0px;}
+	.social-section {padding: 60px 0;}
 }
 
 .social-link-home {
@@ -674,6 +675,12 @@ footer {
 	opacity: .2;
 }
 
+@media (max-width: 400px) {
+	#hero-rbbj-bg {
+		background-position: left;
+	}
+}
+
 .detail-wrapper {
 	position: relative;
 	width: 60%;
@@ -835,4 +842,35 @@ footer {
 		height: 100%;
 	}
 }
+
+.team-section{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+
+	width: 100%;
+	/*height: 10em;*/
+
+	/*background-color: @bg1;*/
+
+	border-top: 1px solid @bg1; 
+
+	.team-title {
+		text-align: center; 
+		vertical-align: middle; 
+		color: @font-grey;
+
+		padding-top: 2em;
+	}
+
+	.team-description {
+		text-align: center; 
+		vertical-align: middle; 
+		color: @font-grey;
+		line-height: 1.5em;
+
+		padding-top: 5px;
+	}
+}
+
 

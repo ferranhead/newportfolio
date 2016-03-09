@@ -77,6 +77,30 @@ h3 {
   margin: 0 auto;
   /*color: @white;*/
 }
+h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  color: #ffffff;
+}
 p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
@@ -4016,6 +4040,9 @@ a {
   .social-wrapper {
     padding: 30px 0 0px;
   }
+  .social-section {
+    padding: 60px 0;
+  }
 }
 .social-link-home {
   /*width: 25%;*/
@@ -4207,6 +4234,11 @@ footer {
   z-index: 2;
   opacity: .2;
 }
+@media (max-width: 400px) {
+  #hero-rbbj-bg {
+    background-position: left;
+  }
+}
 .detail-wrapper {
   position: relative;
   width: 60%;
@@ -4356,4 +4388,26 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.team-section {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  /*height: 10em;*/
+  /*background-color: @bg1;*/
+  border-top: 1px solid #e1e1e1;
+}
+.team-section .team-title {
+  text-align: center;
+  vertical-align: middle;
+  color: #b3b9bf;
+  padding-top: 2em;
+}
+.team-section .team-description {
+  text-align: center;
+  vertical-align: middle;
+  color: #b3b9bf;
+  line-height: 1.5em;
+  padding-top: 5px;
 }
