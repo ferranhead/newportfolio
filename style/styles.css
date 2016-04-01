@@ -3820,8 +3820,36 @@ a {
     height: 12rem;
   }
 }
+.thumb-related {
+  width: 50%;
+  float: left;
+  position: relative;
+  height: 28rem;
+  overflow: hidden;
+}
+@media (min-width: 1450px) {
+  .thumb-related {
+    height: 32rem;
+  }
+}
+@media (min-width: 750px) and (max-width: 1025px) {
+  .thumb-related {
+    width: calc(50% - 20px);
+    float: left;
+    margin: 0 0 20px 20px;
+    height: 16rem;
+  }
+}
+@media (max-width: 749px) {
+  .thumb-related {
+    width: calc(100% - 20px);
+    margin: 0 0 20px 20px;
+    height: 12rem;
+  }
+}
 .thumb:hover .project-title-thumb,
-.touch .thumb .project-title-thumb {
+.touch .thumb .project-title-thumb,
+.thumb-related:hover .project-title-thumb {
   -ms-transform: translateY(40%);
   /* IE 9 */
   -webkit-transform: translateY(40%);
@@ -3833,7 +3861,8 @@ a {
 }
 @media (max-width: 750px) {
   .thumb:hover .project-title-thumb,
-  .touch .thumb .project-title-thumb {
+  .touch .thumb .project-title-thumb,
+  .thumb-related:hover .project-title-thumb {
     -ms-transform: translateY(35%);
     /* IE 9 */
     -webkit-transform: translateY(35%);
@@ -3844,7 +3873,8 @@ a {
   }
 }
 .thumb:hover .project-type-thumb,
-.touch .thumb .project-type-thumb {
+.touch .thumb .project-type-thumb,
+.thumb-related:hover .project-type-thumb {
   -ms-transform: translateY(40%);
   /* IE 9 */
   -webkit-transform: translateY(40%);
@@ -3858,11 +3888,13 @@ a {
   transition-delay: .4s;
 }
 .thumb:hover .thumb-image,
-.touch .thumb .thumb-image {
+.touch .thumb .thumb-image,
+.thumb-related:hover .thumb-image {
   transform: scale(1.1);
 }
 .thumb:hover:after,
-.touch .thumb:after {
+.touch .thumb:after,
+.thumb-related:hover:after {
   opacity: 1;
 }
 @media (max-width: 1024px) {
@@ -3892,8 +3924,26 @@ a {
   .thumb:after {
     opacity: 1;
   }
+  .thumb-related:after {
+    opacity: 1;
+  }
 }
 .thumb:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+.thumb-related:after {
   content: "";
   position: absolute;
   display: block;
@@ -3943,8 +3993,8 @@ a {
 #personal3D-thumb {
   background-image: url(../img/w6.jpg);
 }
-#reel-thumb {
-  background-image: url(../img/w8.jpg);
+#save-the-children-thumb {
+  background-image: url(../img/ferranhead-portfolio-save-the-children-thumb.jpg);
 }
 #diesel-thumb {
   background-image: url(../img/w9.jpg);
@@ -4228,7 +4278,6 @@ footer {
 #hero-rbbj-bg {
   width: 100%;
   height: 100%;
-  /*display: table-cell;*/
   background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb4.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -4242,8 +4291,20 @@ footer {
 #hero-jamesgrant-bg {
   width: 100%;
   height: 100%;
-  /*display: table-cell;*/
   background-image: url(../img/ferranhead-portfolio-james-grant-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  opacity: .2;
+}
+#hero-savethechildren-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/ferranhead-portfolio-save-the-children-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4344,6 +4405,11 @@ footer {
   font-size: 14px;
   color: #2780da;
   margin-bottom: -10px;
+}
+@media (max-width: 700px) {
+  .project-type-thumb-title {
+    margin-bottom: 0;
+  }
 }
 .back {
   display: block;
@@ -4472,12 +4538,20 @@ footer {
   margin-right: 10px;
   margin-bottom: 20px;
 }
-.jg-img-devices-wrapper {
+.img-devices-wrapper {
   display: table;
   width: 100%;
+  margin: 3em 0;
 }
-.jg-img-devices {
+.img-devices {
   display: table-cell;
   width: 100%;
   margin: 0 auto;
+}
+.image-breaker {
+  display: block;
+  position: relative;
+  margin: 2em 0;
+  width: 100%;
+  overflow: hidden;
 }
