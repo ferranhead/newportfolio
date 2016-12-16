@@ -52,19 +52,25 @@ a {
 	background-color: @mainColour;   
 }  
 
+@media (max-width: 350px){
+	.mainHero {
+		max-height: 570px;
+	}
+}
+
 .heroContent {
 	// display: table-cell;
 	position: relative;
 	text-align: left;
 	vertical-align: middle;
 	padding: 90px 30px;
-	max-width: 940px;  
+	max-width: 35em;  
 
 	z-index: 999999;
 }
 
 @media (max-width:350px){
-	.heroContent {padding: 70px 30px;  }
+	.heroContent {padding: 4.5em 30px 0;  } 
 }
 
 
@@ -92,9 +98,88 @@ a {
 	opacity: .2;
 }
 
+.main-subtitle-sm {
+	display: block;
+	padding-top: 17px;
+	max-width: 470px;
+	margin-left: 0;
+}
+
+@media (max-width: 605px) {
+	.main-subtitle-sm {
+		max-width: 400px;
+		margin-right: 60px;
+	}
+}
+
+@media (max-width: 400px) {
+	.main-subtitle-sm {
+		margin-right: 20px;
+	}
+}
+
 // @media (max-width:400px) {
 // 	background-position: right;
 // }
+
+
+/*QUOTE*/
+
+.quote-section {
+	position: relative;
+	display: block;
+	/*height: 20em !important;*/
+	background-color: @darkblue;
+
+	&:before {
+		content: '';
+		display: table;
+		clear: both;
+		padding-top: 10px;
+	}
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+		padding-bottom: 100px;
+	}
+}
+
+.quotesMarks {
+	font-family: @Playfair;
+	font-size: 90px;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /*color: #354B61;*/
+    color: @blue;
+    line-height: 1.3em;
+
+    display: initial;
+    margin-left: ~"calc(50% - 23px)";
+    text-align: center;
+    vertical-align: middle;
+}
+
+.quote-text {
+	text-align: center;
+    vertical-align: middle;
+    /*margin: 0em 5em;*/
+    line-height: 1.4em;
+    color: white;
+    font-size: 45px;
+    margin: 0 30px;
+}
+
+@media (max-width: 500px){
+	.quote-text { font-size: 32px;}
+}
+
+.quote-section-wrapper {
+	max-width: 750px;
+	margin: 0 auto;
+}
 
 /*PROJECTS*/
 
@@ -109,10 +194,30 @@ a {
 .section-wrapper {
 	display: table;
 	margin: 0px auto;
-	padding: 50px 0px;
+	padding: 90px 0px 20px;
 	width: 100%;
 	background-color: @secondaryColour;
 }
+
+@media (max-width: 1024px) {
+	.section-wrapper {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+}
+@media (max-width: 768px) {
+	.section-wrapper {
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 350px) {
+	.section-wrapper {
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+}
+
 
 .section-title {
 	text-align: center;
@@ -229,9 +334,9 @@ a {
 	@media (max-width: 750px) {
 		.project-title-thumb {
 			-ms-transform: translateY(35%); /* IE 9 */
-	   	-webkit-transform: translateY(35%); /* Safari */
-	   	-moz-transform: translateY(35%); /* Mozilla */
-    	transform: translateY(35%);
+		   	-webkit-transform: translateY(35%); /* Safari */
+		   	-moz-transform: translateY(35%); /* Mozilla */
+	    	transform: translateY(35%);
 		}
 	}
 
@@ -266,10 +371,23 @@ a {
     	transform: translateY(40%);
 
     	opacity: 1;
+    	font-size: 25px;
 	}
 
 	.project-type-thumb {
 
+		-ms-transform: translateY(40%); /* IE 9 */
+   	    -webkit-transform: translateY(40%); /* Safari */
+   	    -moz-transform: translateY(40%); /* Mozilla */
+    	transform: translateY(40%);
+
+    	opacity: 1;
+
+		-webkit-transition-delay: .4s; /* Safari */
+    	transition-delay: .4s;
+	}
+
+	.thumb-related {
 		-ms-transform: translateY(40%); /* IE 9 */
    	    -webkit-transform: translateY(40%); /* Safari */
    	    -moz-transform: translateY(40%); /* Mozilla */
@@ -347,6 +465,10 @@ a {
 }
 
 
+#iguzzini-thumb {
+	background-image: url(../img/ferranhead-portfolio-iguzzini-auckland-thumb.jpg); 
+}
+
 #rbbj-thumb {
 	background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb5.jpg); 
 }
@@ -355,9 +477,9 @@ a {
 	background-image: url(../img/ferranhead-portfolio-james-grant-thumb2.jpg);
 }
 
-#deckapp-thumb {
+/*#deckapp-thumb {
 	background-image: url(../img/w3.jpg);
-}
+}*/
 
 #typo-thumb {
 	background-image: url(../img/w4.jpg);
@@ -371,9 +493,9 @@ a {
 	background-image: url(../img/ferranhead-portfolio-expedia-travel-guides-thumb3.jpg);	
 }
 
-#personal3D-thumb {
+/*#personal3D-thumb {
 	background-image: url(../img/w6.jpg);	
-}
+}*/
 
 #save-the-children-thumb {
 	background-image: url(../img/ferranhead-portfolio-save-the-children-thumb.jpg);	
@@ -385,6 +507,16 @@ a {
 
 #biotherm-thumb {
 	background-image: url(../img/w10.jpg);	
+}
+
+.Lscreen {
+	display: block;
+}
+
+@media (max-width:1450px) {
+	.Lscreen {
+		display: none; /*Hide for small screens*/
+	}
 }
 
 // .project-details-thumb {
@@ -682,13 +814,37 @@ a {
 footer {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: darken;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: @darkblue;
 	text-align: center;
 	vertical-align: middle; 
 	display: block;
 } 
+
+@media (max-width: 500px){
+	footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.logo-footer-wrapper {
+	display: block;
+	position: relative;
+
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+
+	left: calc(~"50% - 25px");
+
+	background-color: white;
+}
+
+
+
 
 
 /*WORK PAGES*/
@@ -1026,6 +1182,24 @@ footer {
 	margin-bottom: 20px;
 }
 
+.detail-grid-2 {
+	float: left;
+	width: calc(~"50% - 10px");
+	height: auto;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 60px;
+	margin-top: 0;
+}
+
+@media (max-width: 768px) {
+	.detail-grid-2{
+		width: 100%;
+	}
+}
+
+
 .img-devices-wrapper {
 	display: table;
 	width: 100%;
@@ -1041,8 +1215,6 @@ footer {
 .image-breaker {
 	display: block;
 	position: relative;
-	margin: 2em 0;
+	/*margin: 2em 0;*/
 	width: 100%;
-
-	overflow: hidden;
 }
