@@ -3,32 +3,105 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <link rel="stylesheet" type="text/css" href="style/styles.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="/style/styles.css">
 
 	<!-- LESS compiler -->
-	<link rel="stylesheet/less" type="text/css" href="../style/styles.less">
-	<script src="less.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	  less.watch();
-	</script>
-	<script src="http://lesscss.googlecode.com/files/less-1.2.2.min.js"></script>
+		<link rel="stylesheet/less" type="text/css" href="/style/styles.less">
+		<script src="less.js" type="text/javascript"></script>
+		<script type="text/javascript">
+	  		less.watch();
+		</script>
+		<script src="http://lesscss.googlecode.com/files/less-1.2.2.min.js"></script>
 	<!-- End of LESS compiler -->
 
-	<link rel="stylesheet" type="text/css" href="../style/animate.css">
+	<link rel="stylesheet" type="text/css" href="/style/animate.css">
+	
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta name="description" content="ferranhead is the portfolio of Ferran Gimeno, a passionate Digital Designer, Motiongrapher &amp Art Director with 7 years of experience in both agency and studio.">
-  <meta name="keywords" content="ferranhead, designer, digital, ferran, gimeno, portfolio, web, design, motion, cgi, 3d">
+	
+	<!--SEO-->
+
+		<link rel="canonical" href="www.ferranhead.com">
+		<meta name="keywords" content="ferranhead, designer, digital, ferran, gimeno, portfolio, web, design, motion, cgi, 3d">
+		<meta name="description" content="ferranhead is the portfolio of Ferran Gimeno, a passionate Digital Designer &amp Art Director with seven years of experience in both agency and studio.">
+		<!--FACEBOOK-->
+		<meta property="og:title" content="ferranhead" >
+		<meta property="og:site_name" content="ferranhead">
+		<meta property="og:url" content="www.ferranhead.com" >
+		<meta property="og:description" content="ferranhead is the portfolio of Ferran Gimeno, a passionate Digital Designer &amp Art Director with seven years of experience in both agency and studio." >
+		<meta property="og:image" content="http://payload74.cargocollective.com/1/7/250914/3780309/fgs_o.png" >
+		<meta property="og:type" content="website" >
+		<meta property="og:locale" content="en_UK" >
+		<!--TWITTER-->
+		<meta property="twitter:card" content="summary" >
+		<meta property="twitter:title" content="ferranhead is the portfolio of Ferran Gimeno" >
+		<meta property="twitter:description" content="ferranhead is the portfolio of Ferran Gimeno, a passionate Digital Designer &amp Art Director with seven years of experience in both agency and studio." >
+		<meta property="twitter:creator" content="@ferranhead" >
+		<meta property="twitter:url" content="www.ferranhead.com" >
+		<meta property="twitter:image" content="http://payload74.cargocollective.com/1/7/250914/3780309/fgs_o.png" >
+		<!--GOOGLE+-->
+		<link rel="author" href="https://plus.google.com/u/0/109316039774237054303/about">
+  		
 
 	
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
 
-	<title>ferranhead | Portfolio of Ferran Gimeno</title>
+	<title>Save the Children | ferranhead</title>
+
+	<!-- SCRIPTS -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" ></script>
+
+	<!-- PRELOADER -->
+	<script>
+
+		    if (document.readyState == 'complete') { // Wait for the page to be loaded
+    			$(".loader").fadeOut("slow");
+			} else {
+    			$(window).load(function () {
+        			$(".loader").fadeOut("slow");
+    	})
+	}
+
+
+		</script>
+
+
+		<style type="text/css">
+
+			/* Loader background*/
+			.loader {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 999999999;
+				background: black;
+			}
+
+			.table { 
+				display:table; 
+				width:100%; 
+				height:100%; 
+			}
+			.cell { 
+				display:table-cell; 
+				vertical-align:middle; 
+				text-align:center; 
+				width:100%; 
+				height:100%; 
+			}
+
+		</style>
+		<!-- END PRELOADER -->
+
+
 </head>
 
-<body>
+<body class="preload">
 	<div class="main-wrapper">
 		
 		<!-- HERO -->
@@ -39,9 +112,9 @@
 			</div>
 
 			<div class="heroContent-project">
-				<p class="project-type-thumb-title">Website</p>
-				<h1 class="mainHeader header-project">Save the Children</h1>
-				<p id="main-subtitle">Responsive multi-media scrollable website with editorial approach at its core.</p>
+				<p class="project-type-thumb-title title-animation delay1 grey-title">Website</p>
+				<h1 class="mainHeader header-project title-animation delay2">Save the Children</h1>
+				<p id="main-subtitle" class="main-subtitle title-animation delay3">Responsive multi-media scrollable website with editorial approach at its&nbspcore.</p>
 			</div>
 			<a href="../index.html" class="back">Back to Home</a>
 		</div>
@@ -51,39 +124,39 @@
 		<div class="section">
 			<div class="section-wrapper detail-section">
 				<div class="detail-wrapper">
-					<div class="img-devices-wrapper">
+					<div class="img-devices-wrapper" style="margin-top: 0;">
 						<img alt="Save the Children | Website" src="../img/save-the-children-devices-top.jpg" class="image-detail img-devices">
 					</div>
-
-					<p class="scroll-animation description p2 text-section">Save the Children's Signature Programmes showcase the work the charity does in aim to help young kids to preserve their basic rights as health, basic education and, in top of everything, its own survival. </p>
-					<p class="scroll-animation description p2 text-section">The responsive web app shows the stories behind the programmes in a compelling digital storytelling format, with the objective of communicate Signature Programmes as an attractive source to get funds to.</p>
+					<h5>"The Signature Programmes" gets responsive</h5>
+					<p class=" description p2 text-section">Save the Children's Signature Programmes showcase the work the charity does in aim to help young kids to preserve their basic rights as health, basic education and, in top of everything, its own&nbspsurvival. </p>
+					<p class=" description p2 text-section">The responsive web app shows the stories behind the programmes in a compelling digital storytelling format, with the objective of communicate Signature Programmes as an attractive source to get funds&nbspto.</p>
 
 
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen0.jpg" class="image-detail">
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen1.jpg" class="image-detail detail-grid-2">
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen2.jpg" class="image-detail detail-grid-2">
 
-					<p class="scroll-animation description p2 text-section">As an international project, the web app is multilingual and completely multimedia, featuring text, quotes, video, interactive map and background ambience sound. Everything helps to achieve the credibility and the impact for a great editorial storytelling digital experience.</p>
+					<p class=" description p2 text-section">As an international project, the web app is multilingual and completely multimedia, featuring text, quotes, video, interactive map and background ambience sound. Everything helps to achieve the credibility and the impact for a great editorial storytelling digital&nbspexperience.</p>
 
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen3.jpg" class="image-detail">
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen4.jpg" class="image-detail">
 					<img alt="Save the Children | Website" src="../img/save-the-children-screen5.jpg" class="image-detail">
 
-
-					<p class="scroll-animation description p2 text-section">The project started as an internal tool for Save the Children's staff. However, finally became opened to everyone, preserving a private section for the staff accessing at the end of the last chapter. In addition, the site is fully controllable via CMS allowing Save the Children to be able to customise any content at any time.</p>
+					<h5>Open to everyone, available everywhere.</h5>
+					<p class=" description p2 text-section">The project started as an internal tool for Save the Children's staff. However, finally became opened to everyone, preserving a private section for the staff accessing at the end of the last chapter. In addition, the site is fully controllable via CMS allowing Save the Children to be able to customise any content at any&nbsptime.</p>
 
 					</div>
 			</div>
 
-			<div class="#">
-				<img alt="Save the Children | Website" src="../img/save-the-children-screen6-long.jpg" class="image-breaker">
+			<div class="breaker-wrapper">
+				<div class="image-breaker image-breaker-stc"></div>
 				
 			</div>
 
 			<div class="section-wrapper detail-section">
 				<div class="detail-wrapper">
 
-					<p class="scroll-animation description p2 text-section">A full responsive approach was applied and all the multimedia assets were optimised for each device and screen sizes.</p>
+					<p class=" description p2 text-section">A full responsive approach was applied and all the multimedia assets were optimised for each device and screen&nbspsizes.</p>
 
 					<div class="img-devices-wrapper">
 						<img alt="Save the Children | Website" src="../img/save-the-children-devices-down-mob.jpg" class="image-detail img-devices">
@@ -93,7 +166,7 @@
 						<div class="team-wrapper">
 							<h4 class="team-title">Team</h4>
 							<p class="team-description">Damon Mangos, Ferran Gimeno<br/>
-							2014/2015</p>
+							2014, 2015</p>
 							<h4 class="team-title">Role</h4>
 							<p class="team-description">Design, Art Direction, UI, User Experience, Prototyping</p>
 						</div>
@@ -107,22 +180,26 @@
 		<!-- PROJECTS -->
 		<div class="section">
 			<div class="section-wrapper">
-				<p class="scroll-animation p-big section-title">&amp more. <span class="h2">Related work.</span></p>
+				<p class=" p-big section-title">&amp more. <span class="h2">Related work.</span></p>
 			</div>
 			<div class="thumb-wrapper">
 				<div>
-					
-					<a href="/works/redbull.html" class="scroll-animation">
-						<div class="thumb-image"></div>
-						<div class="thumb-related">
-							<div class="thumb-image" id="rbbj-thumb"></div>
-							<h2 class="project-title-thumb">Red Bull Bedroom Jam<span><p class="project-type-thumb">Website | Campaign</p></span></h2>
+					<a href="pullandbear.html" class="">
+						<div class="thumb image-left">
+							<div class="thumb-image" id="pullandbear-thumb"></div>
+							<h2 class="project-title-thumb">Pull &amp Bear<span><p class="project-type-thumb">Display | In-store | Campaign</p></span></h2>
 						</div>
 					</a>
-					<a href="#" class="scroll-animation">
-						<div class="thumb-related image-left">
-							<div class="thumb-image" id="leeds-thumb"></div>
-							<h2 class="project-title-thumb">Leeds Beckett University<span><p class="project-type-thumb">Website</p></span></h2>
+					<a href="expedia.html" class="">
+						<div class="thumb image-right">
+							<div class="thumb-image" id="expedia-thumb"></div>
+							<h2 class="project-title-thumb">Expedia City Guides<span><p class="project-type-thumb">App | Editorial Print</p></span></h2>
+						</div>
+					</a>
+					<a href="personal.html" class="Lscreen-works">
+						<div class="thumb image-right">
+							<div class="thumb-image" id="personal-thumb"></div>
+							<h2 class="project-title-thumb">Personal projects<span><p class="project-type-thumb">Graphic Design | Illustration | 3D</p></span></h2>
 						</div>
 					</a>
 				</div>
@@ -133,25 +210,25 @@
 		<!-- CONTACT -->
 		<div class="section">
 			<div class="section-wrapper contact-section">
-				<p class="scroll-animation p-big section-title">Easy. <span class="h2">Contact me.</span></p>
-				<a href="mailto:ferranhead@gmail.com?subject=Hi%20ferranhead%20let's%20get%20in%20touch!"><h3 class="scroll-animation mail-contact">ferranhead@gmail.com</h3></a>
+				<p class=" p-big section-title">Easy. <span class="h2">Contact me.</span></p>
+				<a href="mailto:hello@ferranhead.com?subject=Hi%20ferranhead%20let's%20get%20in%20touch!"><h3 class=" mail-contact">hello@ferranhead.com</h3></a>
 			</div>
 		</div>
 
 		<div class="section">
 			<div class="section-wrapper social-section">
-				<p class="scroll-animation p-big section-title">Get Social. <span class="h2">My Social Networks.</span></p>
+				<p class=" p-big section-title">Get Social. <span class="h2">My Social Networks.</span></p>
 					<div class="social-wrapper">
-						<a class=" scroll-animation social-link-home link-behance" target="_blank" href="https://www.behance.net/ferranhead">
+						<a class="  social-link-home link-behance" target="_blank" href="https://www.behance.net/ferranhead">
 							<h3>My Behance</h3>
 						</a><!--
-						--><a class="scroll-animation social-link-home link-dribbble" target="_blank" href="https://dribbble.com/ferranhead">
+						--><a class=" social-link-home link-dribbble" target="_blank" href="https://dribbble.com/ferranhead">
 							<h3>My Dribbble</h3>
 						</a><!--
-						--><a class="scroll-animation social-link-home link-linkedin" target="_blank" href="https://www.linkedin.com/in/ferrangimeno">
+						--><a class=" social-link-home link-linkedin" target="_blank" href="https://www.linkedin.com/in/ferrangimeno">
 							<h3>My LinkedIn</h3>
 						</a><!--
-						--><a class="scroll-animation social-link-home link-pinterest" target="_blank" href="https://uk.pinterest.com/ferranhead/">
+						--><a class=" social-link-home link-pinterest" target="_blank" href="https://uk.pinterest.com/ferranhead/">
 							<h3>My Pinterest</h3>
 						</a>
 					</div>
@@ -162,11 +239,22 @@
 
 		<!-- FOOTER -->
 		<footer>
+			<div class="logo-footer-wrapper"><div class="logo-footer"></div></div>
 			<p class="p-small">Built with love by ©ferranhead 2015</p>
 		</footer>
 
 
 	</div>
+
+	<!-- PRELOADER -->
+		<div class="loader">
+		    <div class="table">
+		        <div class="cell">
+		            <img src="/img/728.gif">
+		            <p>Loading...</p>
+		        </div>
+		    </div>
+		</div>
 
 
 </body>
@@ -174,6 +262,7 @@
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.6.2/less.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
 <script> /*Detect touch devices*/
@@ -182,25 +271,10 @@
 	}
 </script>
 
-<!-- Animation on load
-<script type="text/javascript">
-	$(document).ready(function() {
-  		$("#iam").fadeIn();
-     	$(".mainHeader").fadeIn("slow");
-     	$("#main-subtitle").fadeIn("slow");
-     	$("#hero-home-bg").animate({ height: '110%', opacity: '0px' }, 5000, 'linear');
+<script type="text/javascript"> /*Prevent the animations to start until the page is loaded*/
+	$(window).load(function() {
+  $("body").removeClass("preload");
 });
-</script> -->
-
-<!-- Reveal on scroll
-<script src="js/viewportchecker.js"></script> 
-<script type="text/javascript">
-			jQuery(document).ready(function() {
-				jQuery('.scroll-animation').addClass("hidden").viewportChecker({
-	    	classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
-	    	offset: 100    
-				   });   
-			});            
-</script> -->
+</script>
 
 </html>
