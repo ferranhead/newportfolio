@@ -211,6 +211,8 @@ a {
 
 }
 .title-animation {
+	opacity: 0;
+	-webkit-transform: translateY(40px);
 
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
@@ -221,11 +223,11 @@ a {
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
 
-	animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1);
-    -moz-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1); /* Firefox */
-    -webkit-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1); /* Safari and Chrome */
-    -o-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1); /* Opera */
-    -ms-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1); /* IE */
+	animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1) forwards;
+    -moz-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1) forwards; /* Firefox */
+    -webkit-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1) forwards; /* Safari and Chrome */
+    -o-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1) forwards; /* Opera */
+    -ms-animation: fadeInUp 1.3s cubic-bezier(0,.37,.2,1) forwards; /* IE */
 
 
 
