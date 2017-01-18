@@ -12,7 +12,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0 auto;
-  color: #b3b9bf;
+  color: #B3B9BF;
   margin-bottom: 20px;
   margin-top: 10px;
   line-height: 1.3em;
@@ -158,7 +158,7 @@ p + img {
   font-size: 28px;
   line-height: 1.05em;
   /*color: @gold;*/
-  color: #2780da;
+  color: #2780DA;
 }
 @media (max-width: 400px) {
   .p-big {
@@ -3752,17 +3752,17 @@ a {
   text-decoration: none;
 }
 ::-moz-selection {
-  background: #2780da;
+  background: #2780DA;
   color: #1d1d1d;
   text-shadow: none;
 }
 ::selection {
-  background: #2780da;
+  background: #2780DA;
   color: #1d1d1d;
   text-shadow: none;
 }
 .link {
-  color: #b3b9bf;
+  color: #B3B9BF;
   text-decoration: underline;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -3770,14 +3770,14 @@ a {
   transition: all .2s linear;
 }
 .link:hover {
-  color: #2780da;
+  color: #2780DA;
 }
 /*HOME HERO*/
 .main-wrapper {
   width: 100%;
   height: 100%;
   display: block;
-  position: relative;
+  position: absolute;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
@@ -3785,7 +3785,7 @@ a {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-color: #1f2021;
+  background-color: #1F2021;
 }
 .heroContent {
   position: relative;
@@ -3970,7 +3970,7 @@ a {
 }
 .highlight {
   /*color: @gold;*/
-  color: #2780da;
+  color: #2780DA;
 }
 /*THUMB GRID OF PROJECTS*/
 .thumb {
@@ -4256,7 +4256,7 @@ a {
   text-align: center;
   font-size: 14px;
   /*color: @gold; */
-  color: #2780da;
+  color: #2780DA;
   opacity: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   -moz-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -4424,7 +4424,7 @@ a {
   }
 }
 .mail-contact:hover {
-  color: #2780da;
+  color: #2780DA;
   border-bottom: transparent;
 }
 .mail-contact:before {
@@ -4445,12 +4445,12 @@ a {
   bottom: -5px;
   height: 2px;
   width: 100%;
-  background: #2780da;
+  background: #2780DA;
   transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .mail-contact:hover:before {
   width: 0%;
-  background: #2780da;
+  background: #2780DA;
   transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .mail-contact:hover:after {
@@ -4492,7 +4492,7 @@ footer {
   height: 70%;
   margin: 0 auto;
   display: table;
-  background-color: #1f2021;
+  background-color: #1F2021;
 }
 .hero-detail-bg-wrapper {
   position: absolute;
@@ -4695,7 +4695,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   font-size: 14px;
-  color: #2780da;
+  color: #2780DA;
   margin-bottom: -10px;
 }
 @media (max-width: 700px) {
@@ -4709,7 +4709,7 @@ footer {
   width: auto;
   height: 30px;
   margin: 0 55px 0 0;
-  color: #2780da;
+  color: #2780DA;
   top: 25px;
   z-index: 99999999;
   right: -25px;
@@ -4744,7 +4744,7 @@ footer {
   height: 28px;
   font-size: 24px;
   line-height: 1.2em;
-  color: #2780da;
+  color: #2780DA;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   /* IE 9 */
@@ -4804,13 +4804,13 @@ footer {
 .team-section .team-title {
   text-align: center;
   vertical-align: middle;
-  color: #b3b9bf;
+  color: #B3B9BF;
   padding-top: 2em;
 }
 .team-section .team-description {
   text-align: center;
   vertical-align: middle;
-  color: #b3b9bf;
+  color: #B3B9BF;
   line-height: 1.5em;
   padding-top: 5px;
 }

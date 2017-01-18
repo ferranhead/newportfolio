@@ -1,10 +1,10 @@
 /*IMPORTED*/
 
 @import "grid.less";
-@import "colours.less"; 
+@import "colours.less";
 @import "fonts.less";
-@import "animate.less"; 
- 
+@import "animate.less";
+
 
 /*GENERAL*/
 
@@ -48,11 +48,11 @@ body {
     -ms-animation: none !important; /* IE */
 }
 
-// @media only screen and (max-device-width : 736px) { 
+// @media only screen and (max-device-width : 736px) {
 // 	body, footer {
-		
+
 // 		padding-bottom: 44px;
-		
+
 // 	}
 // }
 
@@ -100,15 +100,15 @@ a {
 }
 
 
-/*HOME HERO*/ 
+/*HOME HERO*/
 
 .main-wrapper {
 	width: 100%;
 	height: 100%;
 	display: block;
-	position: relative;
+	position: absolute;
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch; 
+	-webkit-overflow-scrolling: touch;
 }
 
 .mainHero {
@@ -116,8 +116,8 @@ a {
 	height: 100vh;
 	margin: 0 auto;
 	// display: table;
-	background-color: @mainColour;   
-}  
+	background-color: @mainColour;
+}
 
 // @media (max-width: 350px){
 // 	.mainHero {
@@ -132,7 +132,7 @@ a {
 	vertical-align: middle;
 	// padding: 90px 30px;
 	padding: 5.5em 30px 0;
-	max-width: 35em;  
+	max-width: 35em;
 
 	z-index: 999999;
 
@@ -141,15 +141,15 @@ a {
 }
 
 @media (max-width:350px){
-	.heroContent {padding: 4.5em 30px 0;  } 
+	.heroContent {padding: 4.5em 30px 0;  }
 }
 
 @media (min-width:1550px){
 	.heroContent {
 		padding: 12em 30px 0;
 
-		max-width: 40em;		
-	} 
+		max-width: 40em;
+	}
 	.main-subtitle-sm {
 		font-size: 18px;
 	}
@@ -171,7 +171,7 @@ a {
 	width: 100%;
 	height: 100%;
 	display: table-cell;
-	background-image: url(../img/ferranheadHome-2.jpg);   
+	background-image: url(../img/ferranheadHome-2.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -206,7 +206,7 @@ a {
 // Title animation
 
 .heroContent, .title-animation {
-	visibility: visible !important; 
+	visibility: visible !important;
 	opacity: 1;
 
 }
@@ -339,7 +339,7 @@ a {
 .section {
 	position: relative;
 	width: 100%;
-	/*height: 100%;*/   
+	/*height: 100%;*/
 	height: auto;
 	margin: 0 auto;
 }
@@ -375,7 +375,7 @@ a {
 .section-title {
 	text-align: center;
 	vertical-align: middle;
-	// font-family: serif; 
+	// font-family: serif;
 	padding: 0 20px 30px;
 }
 
@@ -397,7 +397,7 @@ a {
 .highlight {
 	/*color: @gold;*/
 	color: @blue;
-	// font-style: normal; 
+	// font-style: normal;
 }
 
 
@@ -406,7 +406,7 @@ a {
 
 .thumb {
 	width: 50%;
-	float: left; 
+	float: left;
 	position: relative;
 	height: 28rem;
 	overflow: hidden;
@@ -425,7 +425,7 @@ a {
 
 .thumb-related {
 	width: 50%;
-	float: left; 
+	float: left;
 	position: relative;
 	height: 28rem;
 	overflow: hidden;
@@ -483,7 +483,7 @@ a {
 	}
 }
 
-//Copy the hover state to be present in tablets and mob 	 
+//Copy the hover state to be present in tablets and mob
 @media (max-width: 1024px) {
 	.project-title-thumb {
 	-ms-transform: translateY(40%); /* IE 9 */
@@ -545,7 +545,7 @@ a {
   -moz-transition: opacity .4s ease-in;
   -o-transition: opacity .4s ease-in;
   transition: opacity .4s ease-in;
-  
+
 }
 
 .thumb-related:after {
@@ -563,7 +563,7 @@ a {
   -moz-transition: opacity .4s ease-in;
   -o-transition: opacity .4s ease-in;
   transition: opacity .4s ease-in;
-  
+
 }
 
 
@@ -587,11 +587,11 @@ a {
 
 
 #iguzzini-thumb {
-	background-image: url(../img/ferranhead-portfolio-iguzzini-auckland-thumb.jpg); 
+	background-image: url(../img/ferranhead-portfolio-iguzzini-auckland-thumb.jpg);
 }
 
 #rbbj-thumb {
-	background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb5.jpg); 
+	background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb5.jpg);
 }
 
 #jgrant-thumb {
@@ -607,27 +607,27 @@ a {
 }
 
 #leeds-thumb {
-	background-image: url(../img/ferranhead-portfolio-leeds-beckett-university-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-leeds-beckett-university-thumb.jpg);
 }
 
 #expedia-thumb {
-	background-image: url(../img/ferranhead-portfolio-expedia-travel-guides-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-expedia-travel-guides-thumb.jpg);
 }
 
 #save-the-children-thumb {
-	background-image: url(../img/ferranhead-portfolio-save-the-children-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-save-the-children-thumb.jpg);
 }
 
 #pullandbear-thumb {
-	background-image: url(../img/ferranhead-portfolio-pullandbear-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-pullandbear-thumb.jpg);
 }
 
 #biotherm-thumb {
-	background-image: url(../img/ferranhead-portfolio-biotherm-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-biotherm-thumb.jpg);
 }
 
 #fourroses-thumb {
-	background-image: url(../img/ferranhead-portfolio-fourroses-thumb.jpg);	
+	background-image: url(../img/ferranhead-portfolio-fourroses-thumb.jpg);
 }
 
 .Lscreen {
@@ -652,14 +652,14 @@ a {
 
 .project-title-thumb {
 	position: relative;
-	
+
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	
+
 	vertical-align: middle;
 	text-align: center;
-	
+
 	color: @white;
 
 	opacity: 0;
@@ -682,26 +682,26 @@ a {
 }
 
 @media (max-width: 400px) {
-	.project-title-thumb { font-size: 22px;}	
+	.project-title-thumb { font-size: 22px;}
 }
 
 
 .project-type-thumb {
 	position: relative;
-	
+
 	width: 100%;
 	// height: 100%;
 	margin: 0 auto;
-	
+
 	vertical-align: middle;
 	text-align: center;
-	
+
 	font-size: 14px;
 	/*color: @gold; */
 	color: @blue;
 
 	opacity: 0;
-	
+
 	-webkit-transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 	-moz-transition: all .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 	-ms-transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
@@ -752,7 +752,7 @@ a {
     margin: 0 auto;
     padding: 30px 0  10px;
     content: center;
-    text-align: center; 
+    text-align: center;
 }
 
 @media (max-width: 400px){
@@ -763,10 +763,10 @@ a {
 .social-link-home {
 	/*width: 25%;*/
 	display: inline-block;
-	padding: 30px 60px; 
+	padding: 30px 60px;
 	text-align: center;
 	color: @white;
-	background-color: @secondaryColour;  
+	background-color: @secondaryColour;
 
 	-webkit-transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 	-moz-transition: all .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
@@ -794,36 +794,36 @@ a {
 
 .link-behance:hover  {
 	background-color: @behance-color;
-} 
+}
 
 .link-dribbble:hover  {
-	background-color: @dribbble-color; 
+	background-color: @dribbble-color;
  }
 
 .link-linkedin:hover  {
-	background-color: @linkedin-color; 
+	background-color: @linkedin-color;
 }
 
 .link-pinterest:hover  {
 	background-color: @pinterest-color;
 }
 
-.touch { 
+.touch {
 	.link-behance  {
 		/*color: @behance-color !important;*/
 		border-bottom: 3px solid @behance-color;
-} 
- 
+}
+
 	.link-dribbble  {
-		/*color: @dribbble-color !important;*/ 
+		/*color: @dribbble-color !important;*/
 		border-bottom: 3px solid @dribbble-color;
  }
- 
+
 	.link-linkedin  {
 		/*color: @linkedin-color !important; */
 		border-bottom: 3px solid @linkedin-color;
 }
- 
+
 	.link-pinterest  {
 		/*color: @pinterest-color !important; */
 		border-bottom: 3px solid @pinterest-color;
@@ -842,14 +842,14 @@ a {
 	padding: 200px 0 240px;
 }
 .mail-contact {
-	padding: 10px 0 12px 0; 
+	padding: 10px 0 12px 0;
 	color: @white;
-	
+
 	margin: -25px auto;
 	max-width: 180px;
 	text-align: center;
-	
-	
+
+
 	-webkit-transition: color  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 	-moz-transition: color .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
 	-ms-transition: color  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
@@ -922,9 +922,9 @@ footer {
 	padding-bottom: 3rem;
 	background-color: @secondaryColour;
 	text-align: center;
-	vertical-align: middle; 
+	vertical-align: middle;
 	display: block;
-} 
+}
 
 @media (max-width: 500px){
 	footer {
@@ -955,7 +955,7 @@ footer {
 
 .workHero {
 	width: 100%;
-	height: 70%; 
+	height: 70%;
 	margin: 0 auto;
 	display: table;
 	background-color: @mainColour;
@@ -965,7 +965,7 @@ footer {
 	position: absolute;
 	display: table-cell;
 	width: 100%;
-	height: 100%;  
+	height: 100%;
 }
 
 @media (max-width:400px) {
@@ -981,8 +981,8 @@ footer {
 #hero-rbbj-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb4.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-red-bull-bedroom-jam-thumb4.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1005,8 +1005,8 @@ footer {
 #hero-jamesgrant-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-james-grant-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-james-grant-hero.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1022,8 +1022,8 @@ footer {
 #hero-savethechildren-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-save-the-children-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-save-the-children-hero.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1039,8 +1039,8 @@ footer {
 #hero-iguzzini-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-iguzzini-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-iguzzini-hero.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1056,8 +1056,8 @@ footer {
 #hero-expedia-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-expedia-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-expedia-hero.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1073,8 +1073,8 @@ footer {
 #hero-leeds-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-leeds-beckett-university-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-leeds-beckett-university-hero.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1090,8 +1090,8 @@ footer {
 #hero-pullandbear-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-pullandbear-hero.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-pullandbear-hero.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1107,8 +1107,8 @@ footer {
 #hero-fourroses-bg {
 	width: 100%;
 	height: 100%;
-	
-	background-image: url(../img/ferranhead-portfolio-fourroses-thumb.jpg);   
+
+	background-image: url(../img/ferranhead-portfolio-fourroses-thumb.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1147,7 +1147,7 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	/*text-align: center;*/  
+	/*text-align: center;*/
 }
 
 .detail-section {
@@ -1213,12 +1213,12 @@ footer {
     color: @blue;
     top: 25px;
     z-index: 99999999;
-    
+
     right: -25px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     line-height: 1.2em;
-    
+
     text-align: center;
 
     -webkit-transition: all  .8s cubic-bezier(0.230,  1.000, 0.320, 1.000);
@@ -1313,19 +1313,19 @@ footer {
 
 	width: 100%;
 
-	border-top: 1px solid @bg1; 
+	border-top: 1px solid @bg1;
 
 	.team-title {
-		text-align: center; 
-		vertical-align: middle; 
+		text-align: center;
+		vertical-align: middle;
 		color: @font-grey;
 
 		padding-top: 2em;
 	}
 
 	.team-description {
-		text-align: center; 
-		vertical-align: middle; 
+		text-align: center;
+		vertical-align: middle;
 		color: @font-grey;
 		line-height: 1.5em;
 
@@ -1421,7 +1421,7 @@ footer {
 
 	display: table-cell;
 
-	  
+
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1442,15 +1442,15 @@ footer {
 }
 
 .image-breaker-stc {
-	background-image: url(../img/save-the-children-screen6-long.jpg); 
+	background-image: url(../img/save-the-children-screen6-long.jpg);
 }
 
 .image-breaker-iguzzini {
-	background-image: url(../img/iguzzini-screen-long.jpg); 
+	background-image: url(../img/iguzzini-screen-long.jpg);
 }
 
 .image-breaker-expedia {
-	background-image: url(../img/ferranhead-expedia-screen-long.jpg); 
+	background-image: url(../img/ferranhead-expedia-screen-long.jpg);
 }
 
 
@@ -1488,5 +1488,3 @@ footer {
 	height: 100%;
 	display: inline-block;
 }
-
-
