@@ -62,11 +62,9 @@
 			} else {
     			$(window).load(function () {
         			$(".loader").fadeOut("slow");
-    	})
-	}
-
-
-		</script>
+		    	})
+			}
+	</script>
 
 
 		<style type="text/css">
@@ -105,16 +103,32 @@
 	<div class="main-wrapper">
 
 		<!-- HERO -->
-		<div class="mainHero">
+		<div class="mainHero" id="top">
+			
+			<header class="logo-wrapper">
+				<div class="logo title-animation">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="-186 279 26 44" style="enable-background:new -186 279 26 44;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#2780DA;}
+						</style>
+						<path class="st0" d="M-167.5,292L-167.5,292c-3,0-5.5-2.5-5.5-5.5l0,0c0-3,2.5-5.5,5.5-5.5l0,0c3,0,5.5,2.5,5.5,5.5l0,0
+							C-162,289.5-164.5,292-167.5,292z M-177,297v-16c-3.9,0-7,3.1-7,7v33h7v-13l-5-4h5h15v-7H-177z"/>
+					</svg>
+				</div>
+			</header>
+
 			<div class="hero-home-bg-wrapper">
 				<div id="hero-home-bg"></div>
 			</div>
 			<div class="heroContent">
-				<p id="iam" class="main-subtitle-sm title-animation delay1">I am ferranhead</p>
+				
+				<p id="iam" class="main-subtitle-sm title-animation delay1 grey-title">I am ferranhead</p>
 
-				<h1 class="mainHeader title-animation delay2"> <span class="highlight">ferranhead</span> is the portfolio of <span class="highlight">Ferran Gimeno</span></h1>
+				<!-- <h1 class="mainHeader title-animation delay2"> <span class="highlight">ferranhead</span> is the portfolio of <span class="highlight">Ferran Gimeno</span></h1> -->
+				<h1 class="mainHeader title-animation delay2">ferranhead is the portfolio of Ferran Gimeno</h1>
 
-				<p id="main-subtitle" class="main-subtitle-sm title-animation delay3">I am a passionate Digital Designer &amp Art Director with seven years of experience in both agency and&nbsp;studio.</p>
+				<p id="main-subtitle" class="main-subtitle-sm title-animation delay3 grey-title">I am a passionate Digital Designer &amp Art Director with seven years of experience in both agency and&nbsp;studio.</p>
 			</div>
 		</div>
 
@@ -130,7 +144,7 @@
 
 
 		<!-- PROJECTS -->
-		<div class="section">
+		<div class="section" id="projects">
 			<div class="section-wrapper">
 				<p class=" p-big section-title">Chill. <span class="h2">See my work.</span></p>
 			</div>
@@ -229,7 +243,7 @@
 		<div class="section">
 			<div class="section-wrapper contact-section">
 				<p class=" p-big section-title">Easy. <span class="h2">Contact me.</span></p>
-				<a href="mailto:hello@ferranhead.com?subject=Hi%20ferranhead%20let's%20get%20in%20touch!" target="_blank" ><h3 class="mail-contact">hello@ferranhead.com</h3></a>
+				<a href="mailto:hello@ferranhead.com?subject=Hi%20ferranhead%20let's%20get%20in%20touch!" target="_blank" style="display:flex;"><h3 class="mail-contact">hello@ferranhead.com</h3></a>
 			</div>
 		</div>
 
@@ -237,8 +251,24 @@
 
 		<!-- FOOTER -->
 		<footer>
-			<div class="logo-footer-wrapper"><div class="logo-footer"></div></div>
+			<div class="logo-footer-wrapper">
+				<div class="logo-footer">
+					<div class="logo title-animation">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="-186 279 26 44" style="enable-background:new -186 279 26 44;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:#2780DA;}
+							</style>
+							<path class="st0" d="M-167.5,292L-167.5,292c-3,0-5.5-2.5-5.5-5.5l0,0c0-3,2.5-5.5,5.5-5.5l0,0c3,0,5.5,2.5,5.5,5.5l0,0
+								C-162,289.5-164.5,292-167.5,292z M-177,297v-16c-3.9,0-7,3.1-7,7v33h7v-13l-5-4h5h15v-7H-177z"/>
+						</svg>
+					</div>
+				</div>
+			</div>
 			<p class="p-small">Built with love by ©ferranhead 2015</p>
+
+			<!-- GO TO TOP -->
+			<a href="#top" class="btn_top"></a>
 		</footer>
 
 
@@ -249,10 +279,13 @@
 		    <div class="table">
 		        <div class="cell">
 		            <img src="img/728.gif">
-		            <p>Loading...</p>
+		            <p>Thinking...</p>
 		        </div>
 		    </div>
 		</div>
+
+
+	
 
 
 </body>
@@ -269,11 +302,29 @@
 	}
 </script>
 
+
 <script type="text/javascript"> /*Prevent the animations to start until the page is loaded*/
 	$(window).load(function() {
 		$("body").removeClass("preload");
 	});
 </script>
 
+<script type="text/javascript"> /*Smooths the transition to scroll top*/
+	$(function() {
+		var $wrapper = $('.main-wrapper');
+	  	$('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		      	$wrapper.animate({
+		          scrollTop: target.offset().top+$wrapper[0].scrollTop
+		        }, 750, "swing");
+		        return false;
+		      }
+		    }
+		});
+	});
+</script>
 
 </html>

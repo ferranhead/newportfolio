@@ -12,7 +12,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0 auto;
-  color: #B3B9BF;
+  color: #ffffff;
   margin-bottom: 20px;
   margin-top: 10px;
   line-height: 1.3em;
@@ -158,7 +158,7 @@ p + img {
   font-size: 28px;
   line-height: 1.05em;
   /*color: @gold;*/
-  color: #2780DA;
+  color: #2780da;
 }
 @media (max-width: 400px) {
   .p-big {
@@ -3716,13 +3716,12 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  min-height: 630px;
   overflow: hidden;
 }
 body {
   background-color: #060607;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   top: 0;
@@ -3752,17 +3751,17 @@ a {
   text-decoration: none;
 }
 ::-moz-selection {
-  background: #2780DA;
+  background: #2780da;
   color: #1d1d1d;
   text-shadow: none;
 }
 ::selection {
-  background: #2780DA;
+  background: #2780da;
   color: #1d1d1d;
   text-shadow: none;
 }
 .link {
-  color: #B3B9BF;
+  color: #b3b9bf;
   text-decoration: underline;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -3770,7 +3769,7 @@ a {
   transition: all .2s linear;
 }
 .link:hover {
-  color: #2780DA;
+  color: #2780da;
 }
 /*HOME HERO*/
 .main-wrapper {
@@ -3781,43 +3780,69 @@ a {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
+.logo-wrapper {
+  position: absolute;
+  margin-left: -2px;
+  padding: 2em 25px 1em;
+  z-index: 999999999999;
+}
+.logo {
+  width: 1.3em;
+  height: 2.3em;
+  fill: #2780da;
+  -webkit-transition: fill .15s linear;
+  -moz-transition: fill .15s linear;
+  -o-transition: fill .15s linear;
+  transition: fill .15s linear;
+}
+a.svg-link {
+  position: relative;
+  display: block;
+  z-index: 9999999;
+}
+a.svg-link:hover .logo {
+  fill: #ffffff;
+}
 .mainHero {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  background-color: #1F2021;
+  background-color: #1f2021;
 }
 .heroContent {
   position: relative;
   text-align: left;
   vertical-align: middle;
-  padding: 5.5em 30px 0;
+  padding: 7em 25px 0;
   max-width: 35em;
   z-index: 999999;
   opacity: 0;
 }
-@media (max-width: 350px) {
+@media (max-width: 415px) {
   .heroContent {
-    padding: 4.5em 30px 0;
+    padding: 6em 25px 0;
   }
 }
 @media (min-width: 1550px) {
   .heroContent {
     padding: 12em 30px 0;
-    max-width: 40em;
+    max-width: 45em;
   }
   .main-subtitle-sm {
-    font-size: 18px;
+    font-size: 20px;
   }
   .mainHeader {
-    font-size: 50px;
+    font-size: 56px;
+  }
+  .logo {
+    height: 3em;
   }
 }
 .hero-home-bg-wrapper {
   position: absolute;
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 #hero-home-bg {
   width: 100%;
@@ -3853,8 +3878,17 @@ a {
 .title-animation {
   visibility: visible !important;
   opacity: 1;
+  will-change: transform;
 }
 .title-animation {
+  opacity: 0;
+  -ms-transform: translateY(40px);
+  /* IE 9 */
+  -webkit-transform: translateY(40px);
+  /* Safari */
+  -moz-transform: translateY(40px);
+  /* Mozilla */
+  transform: translateY(40px);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translateZ(0);
@@ -3862,36 +3896,36 @@ a {
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1);
-  -moz-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1);
+  animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1) forwards;
+  -moz-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1) forwards;
   /* Firefox */
-  -webkit-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1);
+  -webkit-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1) forwards;
   /* Safari and Chrome */
-  -o-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1);
+  -o-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1) forwards;
   /* Opera */
-  -ms-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1);
+  -ms-animation: fadeInUp 1.3s cubic-bezier(0, 0.37, 0.2, 1) forwards;
   /* IE */
 }
 .title-animation.delay1 {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  -o-animation-delay: 0s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
 }
 .title-animation.delay2 {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
 }
 .title-animation.delay3 {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
 }
 .fade-animation {
   -webkit-backface-visibility: hidden;
@@ -3923,13 +3957,13 @@ a {
 .section-wrapper {
   display: table;
   margin: 0px auto;
-  padding: 90px 0px 20px;
+  padding: 50px 0px 20px;
   width: 100%;
   background-color: #060607;
 }
 @media (max-width: 1024px) {
   .section-wrapper {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
@@ -3941,7 +3975,7 @@ a {
 }
 @media (max-width: 350px) {
   .section-wrapper {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
@@ -3969,8 +4003,7 @@ a {
   }
 }
 .highlight {
-  /*color: @gold;*/
-  color: #2780DA;
+  color: #2780da;
 }
 /*THUMB GRID OF PROJECTS*/
 .thumb {
@@ -3979,6 +4012,7 @@ a {
   position: relative;
   height: 28rem;
   overflow: hidden;
+  will-change: transform, opacity;
 }
 @media (min-width: 1450px) {
   .thumb {
@@ -4177,9 +4211,6 @@ a {
 #jgrant-thumb {
   background-image: url(../img/ferranhead-portfolio-james-grant-thumb2.jpg);
 }
-/*#deckapp-thumb {
-	background-image: url(../img/w3.jpg);
-}*/
 #personal-thumb {
   background-image: url(../img/ferranhead-portfolio-personalwork-thumb.jpg);
 }
@@ -4256,7 +4287,7 @@ a {
   text-align: center;
   font-size: 14px;
   /*color: @gold; */
-  color: #2780DA;
+  color: #2780da;
   opacity: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   -moz-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -4388,6 +4419,7 @@ a {
   padding: 200px 0 240px;
 }
 .mail-contact {
+  display: table;
   padding: 10px 0 12px 0;
   color: #ffffff;
   margin: -25px auto;
@@ -4424,7 +4456,7 @@ a {
   }
 }
 .mail-contact:hover {
-  color: #2780DA;
+  color: #2780da;
   border-bottom: transparent;
 }
 .mail-contact:before {
@@ -4445,12 +4477,12 @@ a {
   bottom: -5px;
   height: 2px;
   width: 100%;
-  background: #2780DA;
+  background: #2780da;
   transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .mail-contact:hover:before {
   width: 0%;
-  background: #2780DA;
+  background: #2780da;
   transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .mail-contact:hover:after {
@@ -4477,14 +4509,63 @@ footer {
   }
 }
 .logo-footer-wrapper {
-  display: block;
+  display: table;
   position: relative;
-  width: 50px;
-  height: 50px;
   margin-bottom: 15px;
-  border-radius: 50%;
   left: calc(50% - 25px);
-  background-color: white;
+}
+@media (max-width: 450px) {
+  .logo-footer-wrapper {
+    margin-bottom: 5px;
+  }
+}
+.logo-footer {
+  padding: 7px 16px;
+}
+.btn_top {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  opacity: .7;
+  -webkit-transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  -ms-transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn_top:after {
+  content: "\279D";
+  margin: 5px 0;
+  display: inline-block;
+  width: 23px;
+  height: 28px;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #2780da;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -moz-transform: rotate(-90deg);
+  /* Firefox */
+  -webkit-transform: rotate(-90deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-90deg);
+  /* Opera */
+  -webkit-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  -ms-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn_top:hover {
+  opacity: 1;
+}
+@media (max-width: 420px) {
+  .btn_top {
+    right: 10px;
+  }
 }
 /*WORK PAGES*/
 .workHero {
@@ -4492,7 +4573,8 @@ footer {
   height: 70%;
   margin: 0 auto;
   display: table;
-  background-color: #1F2021;
+  position: relative;
+  background-color: #1f2021;
 }
 .hero-detail-bg-wrapper {
   position: absolute;
@@ -4504,15 +4586,9 @@ footer {
   .workHero {
     height: 60%;
   }
-  .hero-detail-bg-wrapper {
-    height: 60%;
-  }
 }
 @media (min-width: 401px) and (max-width: 1024px) {
   .workHero {
-    height: 85%;
-  }
-  .hero-detail-bg-wrapper {
     height: 85%;
   }
 }
@@ -4695,7 +4771,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   font-size: 14px;
-  color: #2780DA;
+  color: #2780da;
   margin-bottom: -10px;
 }
 @media (max-width: 700px) {
@@ -4709,7 +4785,7 @@ footer {
   width: auto;
   height: 30px;
   margin: 0 55px 0 0;
-  color: #2780DA;
+  color: #2780da;
   top: 25px;
   z-index: 99999999;
   right: -25px;
@@ -4744,7 +4820,7 @@ footer {
   height: 28px;
   font-size: 24px;
   line-height: 1.2em;
-  color: #2780DA;
+  color: #2780da;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   /* IE 9 */
@@ -4773,7 +4849,7 @@ footer {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  padding: 90px 30px;
+  padding: 90px 20px;
   z-index: 999999;
 }
 .text-section {
@@ -4804,13 +4880,13 @@ footer {
 .team-section .team-title {
   text-align: center;
   vertical-align: middle;
-  color: #B3B9BF;
+  color: #b3b9bf;
   padding-top: 2em;
 }
 .team-section .team-description {
   text-align: center;
   vertical-align: middle;
-  color: #B3B9BF;
+  color: #b3b9bf;
   line-height: 1.5em;
   padding-top: 5px;
 }
@@ -4860,7 +4936,7 @@ footer {
 .img-devices-wrapper-top {
   display: table;
   width: 100%;
-  margin: -5em 0;
+  margin: -2em 0;
 }
 @media (max-width: 800px) {
   .img-devices-wrapper-top {
