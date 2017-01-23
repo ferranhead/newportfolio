@@ -183,4 +183,6 @@ p + img {
 }
 .bold {
   font-weight: bold;
+  font-size: 16px !important;
+  color: #7c8690 !important;
 }

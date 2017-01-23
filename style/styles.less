@@ -13,7 +13,6 @@ html {
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	// min-height: 630px;
 
 	overflow: hidden;
 }
@@ -22,7 +21,6 @@ body {
 	background-color: @secondaryColour;
 	width: 100%;
 	min-height: 100%;
-	// height: 100%;
 	margin: 0;
 	padding: 0;
 	top: 0;
@@ -125,7 +123,6 @@ a.svg-link {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	// display: table;
 	background-color: @mainColour;
 }
 
@@ -1427,12 +1424,16 @@ footer {
 
 .detail-grid-4 {
 	float: left;
-	width: calc(~"25% - 10px");
+	width: calc(~"25% - 8px");
 	height: auto;
 	display: inline-block;
 	position: relative;
 	margin-right: 10px;
 	margin-bottom: 20px;
+}
+
+.detail-grid-4:nth-of-type(4n) {
+	margin-right: 0;
 }
 
 .detail-grid-2 {
@@ -1449,6 +1450,9 @@ footer {
 @media (max-width: 768px) {
 	.detail-grid-2{
 		width: 100%;
+	}
+	.detail-grid-4 {
+		width: calc(~"50% - 10px");
 	}
 }
 
