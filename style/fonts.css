@@ -108,7 +108,6 @@ h5 {
   margin: 0 auto;
   text-transform: uppercase;
   margin-bottom: 1em;
-  margin-top: 3em;
   max-width: 650px;
 }
 .h5 {
@@ -123,7 +122,6 @@ h5 {
   margin: 0 auto;
   text-transform: uppercase;
   margin-bottom: 1em;
-  margin-top: 3em;
   max-width: 650px;
 }
 p {
@@ -184,5 +182,9 @@ p + img {
 .bold {
   font-weight: bold;
   font-size: 16px !important;
+  letter-spacing: 0.02em;
   color: #7c8690 !important;
+}
+p + h5 {
+  padding-top: 3em;
 }

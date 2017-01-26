@@ -111,7 +111,6 @@ h5 {
   margin: 0 auto;
   text-transform: uppercase;
   margin-bottom: 1em;
-  margin-top: 3em;
   max-width: 650px;
 }
 .h5 {
@@ -126,13 +125,7 @@ h5 {
   margin: 0 auto;
   text-transform: uppercase;
   margin-bottom: 1em;
-  margin-top: 3em;
   max-width: 650px;
-}
-@media (max-width: 700px) {
-  h5 {
-    margin-top: -2em;
-  }
 }
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -192,7 +185,11 @@ p + img {
 .bold {
   font-weight: bold;
   font-size: 16px !important;
+  letter-spacing: 0.02em;
   color: #7c8690 !important;
+}
+p + h5 {
+  padding-top: 3em;
 }
 /*
 Animate.css - http://daneden.me/animate
@@ -3963,20 +3960,8 @@ a {
 .section-wrapper {
   display: table;
   margin: 0px auto;
-  padding: 50px 0px 20px;
   width: 100%;
   background-color: #060607;
-}
-@media (max-width: 1024px) {
-  .section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 2em;
-  }
-}
-@media (max-width: 350px) {
-  .section-wrapper {
-    padding-bottom: 1em;
-  }
 }
 .section-title {
   text-align: center;
@@ -4567,6 +4552,23 @@ footer {
   }
 }
 /*WORK PAGES*/
+.work_margin {
+  margin: 3em 0;
+}
+.projects_margin {
+  margin: 4em 0 1em;
+}
+@media (max-width: 320px) {
+  .projects_margin {
+    margin-bottom: 0.3em;
+    margin-top: 3em;
+  }
+}
+@media (min-width: 321px) and (max-width: 1024px) {
+  .projects_margin {
+    margin-bottom: 2em;
+  }
+}
 .workHero {
   width: 100%;
   height: 70%;
@@ -4639,7 +4641,7 @@ footer {
   width: 100%;
   height: 100%;
   background-image: url(../img/ferranhead-portfolio-iguzzini-hero.jpg);
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
@@ -4704,10 +4706,12 @@ footer {
   position: relative;
   width: 60%;
   margin: 0 auto;
+  margin-top: 5em;
 }
 @media (max-width: 768px) {
   .detail-wrapper {
     width: 85%;
+    margin-top: 3em;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -4719,11 +4723,11 @@ footer {
   color: #7c8690 !important;
 }
 .team-wrapper {
-  margin: 2em 0px 3em;
+  margin: 2em 0px 5em;
 }
 @media (max-width: 415px) {
   .team-wrapper {
-    margin: 0.5em 0px 2.5em;
+    margin: 0.5em 0px 3.5em;
   }
 }
 .description {
@@ -4740,12 +4744,6 @@ footer {
   width: 100%;
   height: auto;
   display: table-cell;
-  margin: 4em 0;
-}
-@media (max-width: 800px) {
-  .image-detail {
-    margin: 2em 0 3em;
-  }
 }
 .image-mobile-wrapper {
   display: block;
@@ -4870,7 +4868,7 @@ footer {
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0;
-  margin: 4em 0;
+  margin-top: 2em;
 }
 .vimeo-container iframe {
   position: absolute;
@@ -4883,6 +4881,7 @@ footer {
   display: block;
   position: relative;
   margin: 0 auto;
+  margin-top: 4em;
   width: 100%;
   border-top: 1px solid #e1e1e1;
 }
@@ -4912,6 +4911,9 @@ footer {
   .detail-grid-3 {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .detail-grid-3:nth-last-child(1) {
+    margin-bottom: 0;
   }
 }
 .detail-margin {
@@ -4953,25 +4955,9 @@ footer {
     width: calc(50% - 10px);
   }
 }
-.img-devices-wrapper-top {
-  display: table;
-  width: 100%;
-  margin: -2em 0 -5em;
-}
-@media (min-width: 450px) and (max-width: 800px) {
-  .img-devices-wrapper-top {
-    margin: -3em 0 -4em;
-  }
-}
-@media (max-width: 449px) {
-  .img-devices-wrapper-top {
-    margin: -1em 0 -2em;
-  }
-}
 .img-devices-wrapper {
   display: table;
   width: 100%;
-  margin: 3em 0;
 }
 .img-devices {
   display: table-cell;
@@ -4982,7 +4968,7 @@ footer {
   display: table;
   width: 100%;
   height: 100%;
-  padding-top: 2em;
+  padding-top: 4em;
   background-color: #ffffff;
 }
 .image-breaker {
@@ -5002,6 +4988,11 @@ footer {
     height: 12em;
   }
   .breaker-wrapper {
+    padding-top: 3em;
+  }
+}
+@media (max-width: 320px) {
+  .breaker-wrapper {
     padding-top: 1em;
   }
 }
@@ -5013,6 +5004,11 @@ footer {
 }
 .image-breaker-expedia {
   background-image: url(../img/ferranhead-expedia-screen-long.jpg);
+}
+@media (max-width: 768px) {
+  .image-breaker-expedia {
+    background-position: center left;
+  }
 }
 .grid-3col-gutter {
   display: inline-block;
