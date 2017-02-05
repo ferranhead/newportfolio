@@ -205,3 +205,6 @@ p + img {
 p + h5 {
   padding-top: 3em;
 }
+p + p {
+  padding-top: 1em;
+}
