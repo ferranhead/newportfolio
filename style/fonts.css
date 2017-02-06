@@ -70,9 +70,6 @@ h2 {
     max-width: auto !important;
   }
 }
-/*@media (max-width: 400px) {
-    	.h2 { font-size: 26px;}
-    }*/
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
@@ -154,16 +151,6 @@ p {
     font-size: 20px;
   }
 }
-/*p ~ p {
-	margin-bottom: 40px; 
-}
-
-p + img {
-	margin-bottom: 60px; 	
-}*/
-/*div ~ p {
-	margin-bottom: 60px;
-}*/
 .p-big {
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
