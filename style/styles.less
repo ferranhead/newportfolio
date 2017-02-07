@@ -3,7 +3,7 @@
 @import "grid.less";
 @import "colours.less";
 @import "fonts.less";
-// @import "animate.less";
+@import "animate.less";
 
 
 /*GENERAL*/
@@ -220,6 +220,92 @@ a {
 	}
 }
 
+// .cta {
+// 	display: inline-block;
+// 	position: relative;
+// 	padding: 8px 40px;
+// 	margin-top: 2.5em;
+
+// 	border-style: solid;
+// 	border-width: 1px;
+// 	border-color: @blue;
+
+//   -webkit-transition: border-color .2s linear;
+//   -moz-transition: border-color .2s linear;
+//   -o-transition: border-color .2s linear;
+//   transition: border-color .2s linear;
+
+// }
+
+// .cta p {
+// 	color: @blue;
+
+//   -webkit-transition: color .2s linear;
+//   -moz-transition: color .2s linear;
+//   -o-transition: color .2s linear;
+//   transition: color .2s linear;
+// }
+
+// .cta:hover {
+// 	border-color: @white;
+
+// 	&.cta p {
+// 		color: @white;
+// 	}
+// }
+
+
+.cta {
+	display: inline-block;
+	position: relative;
+	margin-top: 1.5em;
+}
+
+.cta p {
+	color: @font-grey-darker;
+	display: inline-block;
+
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.cta:after {
+	content: "\279D";
+	
+	margin-left: 5px;
+	display: inline-block;
+
+	font-size: 16px;
+	color: @font-grey-darker;
+
+	-webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+
+    -webkit-transition: margin-left .2s cubic-bezier(0,.37,.2,1);
+    -moz-transition: margin-left .2s cubic-bezier(0,.37,.2,1);
+    -o-transition: margin-left .2s cubic-bezier(0,.37,.2,1);
+    transition: margin-left .2s cubic-bezier(0,.37,.2,1);
+
+}
+
+.cta:hover {
+	margin-top: 1.5em;
+
+	&.cta p {
+		color: @blue;
+	}
+
+	&.cta:after {
+		color: @blue;
+		margin-left: 10px;
+	}
+}
+
+
 // Title animation
 
 .heroContent, .title-animation {
@@ -274,6 +360,13 @@ a {
 	-ms-animation-delay: 0.8s;
 	-o-animation-delay: 0.8s;
     }
+    &.delay4 {
+    -webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+	-ms-animation-delay: 1s;
+	-o-animation-delay: 1s;
+    }
 }
 // End of Title animation
 
@@ -298,6 +391,17 @@ a {
 
 
 /*PROJECTS*/
+
+#projects {
+	position: absolute;
+	top: -4em;
+}
+
+@media (max-width: 320px) {
+	#projects {
+		top: -3em;
+	}
+}
 
 .section {
 	position: relative;
